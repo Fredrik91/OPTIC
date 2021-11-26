@@ -22,8 +22,8 @@ library(tidyverse)
 ## Step 2 importing data #####
 
 df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Use.csv")
-assets = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Asset Inventory.csv")
-assets_reduced = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Assets_reduced.csv")
+#assets = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Asset Inventory.csv")
+#assets_reduced = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Assets_reduced.csv")
  
 ## Step 3. Generate variables ####
 
@@ -63,12 +63,12 @@ df$Vehicle <- df$Vehicle %>% replace_na('Unknown vehicle')
 df <- df[complete.cases(df), ]
 
 
-assets <- select(assets,-c('Site ID','District','CP1 Asset Number','CP2 Asset Number','Commissioning Date','Commissioning Certificate Date','Additional Notes','Charger Model'))
-assets <- select(assets,-c('Charger type', 'Bay Marking Completed','Total Days to Completion','MPAN Number'))
-assets <- select(assets,-c('CP3 Asset Number','Signage Completed'))
+#assets <- select(assets,-c('Site ID','District','CP1 Asset Number','CP2 Asset Number','Commissioning Date','Commissioning Certificate Date','Additional Notes','Charger Model'))
+#assets <- select(assets,-c('Charger type', 'Bay Marking Completed','Total Days to Completion','MPAN Number'))
+#assets <- select(assets,-c('CP3 Asset Number','Signage Completed'))
 
-assets_reduced<-select(assets_reduced,-c('Serial','Make','Charge Point ID'))
-assets_reduced <-unique(assets_reduced)
+#assets_reduced<-select(assets_reduced,-c('Serial','Make','Charge Point ID'))
+#assets_reduced <-unique(assets_reduced)
 
 ## Step 5. Drop outliers and erroneous values####
 
