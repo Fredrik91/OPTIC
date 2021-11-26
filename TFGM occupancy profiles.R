@@ -39,6 +39,9 @@ df_1$time_stamp <-df_1$start_time_stamp
 df_1$time_stamp <-if_else(df_1$row_odd == 0,df_1$start_time_stamp,df_1$end_time_stamp) 
 #using fill for row_odd essentially creates a dummy variable for when the connector is occupied or not.
 #After this, timestamps without charging can be dropped. 
+
+# problem here is the use of 'ymd_hms' format for the time stamp. It is better to have ymd_hm format, however unclear how to achieve that
+
 df_1 <-df_1 %>%
   mutate(time_stamp = ymd_hms(time_stamp)) %>%
   complete(time_stamp = seq(floor_date(min(time_stamp), "minute"), max(time_stamp), 1)) %>%
