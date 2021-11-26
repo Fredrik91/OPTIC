@@ -7,9 +7,7 @@ rm(list = ls())
 
 library(tidyverse)
 library(lubridate)
-library(utilities)
-library(splitstackshape)
-library(neatRanges)
+
 
 ### step 1. Generate time series for 2018
 
