@@ -7,7 +7,7 @@ rm(list = ls())
 
 library(tidyverse)
 library(lubridate)
-
+library(splitstackshape)
 
 ### step 1. Generate time series for 2018
 
@@ -20,11 +20,14 @@ timestamps<- as.data.frame(seq(from=start, by=interval*1, to=end))
 
 timestamps <- rename(timestamps, time_stamp = `seq(from = start, by = interval * 1, to = end)`)
 
+
+
 ### step 2. Load in TFGM dataset
 df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM cleaned data.csv")
 
 df <- tibble::rowid_to_column(df, "charge_id")
 ### step 3. Generate ID by site, cpid, connector.In total 306 ID's are generated. 
+### for each connector, charge profiles should be generated and then linked back together to form time series plots on occupancy, or to enable occupancy calculations
 
 df<- df %>% group_by(Site,`CP ID`,Connector)%>% dplyr::mutate(ID=cur_group_id())
 
@@ -35,18 +38,21 @@ df_1 <- expandRows(df_1, count = 2, count.is.col=FALSE)
 df_1$row_odd <-seq_len(nrow(df_1)) %% 2
 df_1$time_stamp <-df_1$start_time_stamp
 df_1$time_stamp <-if_else(df_1$row_odd == 0,df_1$start_time_stamp,df_1$end_time_stamp) 
+
+
 #using fill for row_odd essentially creates a dummy variable for when the connector is occupied or not.
 #After this, timestamps without charging can be dropped. 
 
 # problem here is the use of 'ymd_hms' format for the time stamp. It is better to have ymd_hm format, however unclear how to achieve that
+## 60 instead of 1 after 'max(time_stamp) does the trick
 
 df_1 <-df_1 %>%
   mutate(time_stamp = ymd_hms(time_stamp)) %>%
-  complete(time_stamp = seq(floor_date(min(time_stamp), "minute"), max(time_stamp), 1)) %>%
+  complete(time_stamp = seq(floor_date(min(time_stamp),"minute"), max(time_stamp),60)) %>%
   fill(row_odd,  .direction = "up")
-df_1$time_stamp <- round_date(df_1$time_stamp,unit="1 minute")
+#df_1$time_stamp <- round_date(df_1$time_stamp,unit="1 minute")
 df_1<-subset(df_1, row_odd==1)
-df_1 <- unique(df_1)
+#df_1 <- unique(df_1)
 df_1 <-ungroup(df_1)
 df_1<-select(df_1,c("row_odd","time_stamp"))
 
