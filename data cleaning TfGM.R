@@ -20,6 +20,7 @@ rm(list = ls())
 library(tidyverse)
 
 ## Step 2 importing data #####
+# please note, the current dataset used does not contain userid's. 
 
 df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Use.csv")
 #assets = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Asset Inventory.csv")
@@ -45,7 +46,10 @@ df$power_output[str_detect(df$Model,'3.6kW')] <-3.6
 df$power_output[str_detect(df$Model,'7kW')] <-7
 df$power_output[str_detect(df$Model,'Rapid')] <-50
 
-
+# The variable minimum plugin time is based on the assumption that each charger provides power at its maximum power rating
+# Power rating (see df$power_output) is based on the model specifications. 
+# This assumption very likely overstates the true minimum charging time. An option is to use 80% or 90% of the assumed minimum time.
+# this may then be more realistic
 df <- mutate(df,minimum_plugin_time =df$`Total kWh`/ df$power_output)
 df$minimum_plugin_time<- df$minimum_plugin_time*60
 df <-mutate(df,idle_plugin_time=df$charge_duration - df$minimum_plugin_time)
@@ -58,6 +62,8 @@ df$end_time_stamp_charge <- round_date(df$end_time_stamp_charge,unit="1 minute")
 ## Step 4. Dropping missing data and obsolete variables####
 #### Drop missing variables. Missings are present in timestamp, total kwh and vehicle. Missings in vehicle are not relevant.  
 # missings in timestamps. Complete cases function used after infilling missings in vehicle field will drop all missings in timestamp and totalkwh
+# Update: Users can record the vehicle type when they apply for an account, however the field 'vehicle' is not mandatory. 
+# Hence 20% in this field is missing. 
 df$Vehicle <- df$Vehicle %>% replace_na('Unknown vehicle')
 
 df <- df[complete.cases(df), ]
@@ -81,6 +87,10 @@ df <- subset(df, `Total kWh` <=100 & `Total kWh` >0.5)
 df <- subset(df, charge_duration - minimum_plugin_time >0)
 
 ## Step 6. Generate summary statistics on the site level####
+### Sites can have multiple chargepoints (e.g., P+R such as Trafford Park), thus multiple charge point id's may be available per site. 
+### In case 2019 data is added, be aware that less sites are available in 2019 due to rationalisation of the network
+### Some sites aren't actually public (e.g. TFGM HQ, Manchester Met Uni)
+
 
 df0<-df %>% count(Site, sort = TRUE)
 df1<-df%>% group_by(Site)%>% summarise(chargeduration_mean=mean(charge_duration)) 
@@ -104,8 +114,11 @@ rm(df_list)
 rm(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9)
 
 ## Step 7. Export data ####
-write_csv(df,"C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM cleaned data.csv")
-write_csv(site,"C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Site data.csv")
+write_csv(df,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/TFGM cleaned data.csv")
+# For use in QGIS
+# QGIS file contains contextual information from the UK census, as well as shapefiles such as road network and so on.
+# Land use characteristics could be added there to enrich the data. 
+write_csv(site,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/QGIS/Shapefiles/TFGM Site data.csv")
 
 ## Step 8. Summary statistics and visualisations ####
 
@@ -116,6 +129,7 @@ duration <-aggregate(df$charge_duration, by=list(df$start_time_stamp_new),median
 plugin_time <-aggregate(df$minimum_plugin_time,by=list(df$start_time_stamp_new),median)
 
 day_kwh <- aggregate(df$`Total kWh`, by=list(df$start_time_stamp_new),median)
+day_kwh_total <- aggregate(df$`Total kWh`, by=list(df$start_time_stamp_new),sum)
 
 ggplot(date, aes(x=Group.1,y=x)) + geom_line() 
 
@@ -125,6 +139,7 @@ ggplot(plugin_time,aes(x=Group.1,y=x)) + geom_line()
 
 ggplot(day_kwh, aes(x=Group.1,y=x)) + geom_line() 
 
+ggplot(day_kwh_total, aes(x=Group.1,y=x)) + geom_line() 
 
 #site level statistics
 ggplot(site,aes(x=chargeduration_median)) + geom_histogram(binwidth=5)  +xlim(0,500)
@@ -142,7 +157,7 @@ ggplot(df, aes(x=minimum_plugin_time)) + geom_histogram(binwidth=1) +xlim(0,400)
 ggplot(df, aes(x=idle_plugin_time)) + geom_histogram(binwidth=1) +xlim(0,400)
 ggplot(df, aes(x=`Total kWh`)) + geom_histogram(binwidth=0.1)
 
-
+ggplot(df, aes(x=`power_output`)) + geom_histogram(binwidth=1)
 
 
 
