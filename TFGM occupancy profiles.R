@@ -65,10 +65,11 @@ df_1<-select(df_1,c("row_odd","time_stamp"))
 df_1 <- full_join(df_1, timestamps, by="time_stamp")
 df_1$row_odd <- df_1$row_odd %>% replace_na(0)
 
-
+### This then plots the occupancy for one site. 
 ggplot(data=df_1, aes(x=time_stamp,y=row_odd)) + geom_line()
 
 
-
+## Now this needs to be automated for all sites, in such a way that total occupancy on the network can be derived. 
+## In STATA, codes for this are fully automated and available. 
 
 ## perhaps after this, append by timestamp to obtain total occupancy on the network. 
