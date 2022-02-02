@@ -11,8 +11,9 @@
 ## Step 4 Dropping missing data and obsolete variables
 ## Step 5 Drop outliers and erroneous values
 ## Step 6 Generate summary statistics on the site level
-## Step 7 Exporting data
-## Step 8 Summary statistics and visualisations
+## Step 7 Generate summary statistics on the userid level
+## Step 8 Exporting data
+## Step 9 Summary statistics and visualisations
 
 ## Step 1 load library ####
 rm(list = ls())
@@ -119,7 +120,7 @@ rm(df_list)
 rm(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9,df10)
 
 
-#### Generate user-data
+#### Step 7 Generate summary statistics on the user-id level ####
 
 df0<-df%>% count(userid, sort = TRUE)
 df1<-df%>% group_by(userid)%>% summarise(chargeduration_mean=mean(charge_duration)) 
@@ -139,14 +140,14 @@ userdata<-df_list%>%reduce(full_join,by='userid')
 rm(df_list)
 rm(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9,df10)
 
-## Step 7. Export data ####
+## Step 8. Export data ####
 write_csv(df,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/TFGM cleaned data.csv")
 # For use in QGIS
 # QGIS file contains contextual information from the UK census, as well as shapefiles such as road network and so on.
 # Land use characteristics could be added there to enrich the data. 
 write_csv(site,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/QGIS/Shapefiles/TFGM Site data.csv")
 
-## Step 8. Summary statistics and visualisations ####
+## Step 9. Summary statistics and visualisations ####
 
 df$start_time_stamp_new <- as.Date(df$start_time_stamp)
 date<-aggregate(df$totalkwh, by=list(df$start_time_stamp_new), sum)
