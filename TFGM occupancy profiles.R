@@ -42,8 +42,9 @@ df<- df %>% group_by(site,cpid,connector)%>% dplyr::mutate(ID=cur_group_id())
 # indicating whether the connector is occupied for that timestamp or not. 
 #subsequently, all these files can be joined, and then the occupancy indicators can be added up, to profile total occupancy on the network for any
 #given timestamp. After this, occupancy profiles for each weekday and weekend day can be derived. 
+#375 ID's in total in dataset. Best idea might be to generate a loop, though computationally intensive. 
 
-df_1 <- subset(df, ID==111)
+df_1 <- subset(df,df$ID==111)
 df_1 <- select(df_1,c("totalkwh","start_time_stamp","end_time_stamp","charge_id"))
 #expand by 2 and then generate timestamp for start and end. This can subsequently be merged with timestamp dataframe
 df_1 <- expandRows(df_1, count = 2, count.is.col=FALSE)
