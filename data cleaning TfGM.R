@@ -19,7 +19,7 @@
 rm(list = ls())
 
 library(tidyverse)
-
+library(lubridate)
 ## Step 2 importing data #####
 # please note, the current dataset used does not contain userid's. 
 #Update. TFGM 2018 2019 data is available which includes a userid. Please note, the vehicle field is only available for 2018 as this could not 
@@ -60,9 +60,9 @@ df <- mutate(df,minimum_plugin_time =df$totalkwh/ df$power_output)
 df$minimum_plugin_time<- df$minimum_plugin_time*60
 df <-mutate(df,idle_plugin_time=df$charge_duration - df$minimum_plugin_time)
 
-
-df$end_time_stamp_charge <- df$start_time_stamp + dminutes(df$minimum_plugin_time)
-df$end_time_stamp_charge <- round_date(df$end_time_stamp_charge,unit="1 minute")
+#somehow the two functions below do not work
+#df$end_time_stamp_charge <- df$start_time_stamp + minutes(df$minimum_plugin_time)
+#df$end_time_stamp_charge <- round_date(df$end_time_stamp_charge,unit="1 minute")
 
 
 ## Step 4. Dropping missing data and obsolete variables####
@@ -98,12 +98,12 @@ df <- subset(df, charge_duration - minimum_plugin_time >0)
 ### Some sites aren't actually public (e.g. TFGM HQ, Manchester Met Uni)
 
 
-df0<-df%>% count(site, sort = TRUE)
-df1<-df%>% group_by(site)%>% summarise(chargeduration_mean=mean(charge_duration)) 
-df2<-df%>% group_by(site)%>% summarise(chargeduration_median=median(charge_duration))
-df3<-df%>% group_by(site)%>% summarise(kwh_mean=mean(totalkwh))
-df4<-df%>% group_by(site)%>% summarise(kwh_median=median(totalkwh))
-df5<-df%>% group_by(site)%>% summarise(kwh_total=sum(totalkwh))
+df0 <-df%>% count(site, sort = TRUE)
+df1 <-group_by(df, site) %>% summarise(chargeduration_mean=mean(charge_duration)) 
+df2 <-group_by(df, site) %>% summarise(chargeduration_median=median(charge_duration))
+df3 <-group_by(df, site) %>% summarise(kwh_mean=mean(totalkwh))
+df4 <-group_by(df, site) %>% summarise(kwh_median=median(totalkwh))
+df5 <-group_by(df, site) %>% summarise(kwh_total=sum(totalkwh))
 df6 <-group_by(df, site) %>% summarise(first_event = min(start_time_stamp))
 df7 <-group_by(df, site) %>% summarise(final_event = max(start_time_stamp))
 df8 <-group_by(df, site) %>% summarise(median_min_plugin_time=median(minimum_plugin_time))
