@@ -92,7 +92,6 @@ df <- subset(df, charge_duration <=1440 & charge_duration >5)
 df <- subset(df, totalkwh <=100 & totalkwh >0.5)
 df <- subset(df, charge_duration - minimum_plugin_time >0)
 
-df <- subset(df, userid)
 
 ## Step 6. Generate summary statistics on the site level####
 ### Sites can have multiple chargepoints (e.g., P+R such as Trafford Park), thus multiple charge point id's may be available per site. 
