@@ -18,8 +18,8 @@ library(splitstackshape)
 
 start <- as.POSIXct("2018-01-01")
 interval <- 60
-
-end <- start + as.difftime(365, units="days")
+#730 days for two years
+end <- start + as.difftime(730, units="days")
 
 timestamps<- as.data.frame(seq(from=start, by=interval*1, to=end))
 
@@ -27,17 +27,24 @@ timestamps <- rename(timestamps, time_stamp = `seq(from = start, by = interval *
 
 
 
-### step 3. Load in TFGM dataset ####
-df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM cleaned data.csv")
+### step 3. Load in cleaned TFGM dataset, with events in 2018 and 2019 ####
+#please note, this dataset is generated through the coding file 'data cleaning TfGM.R'.  
+df = read_csv("C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/TFGM cleaned data.csv")
+
 
 df <- tibble::rowid_to_column(df, "charge_id")
 ### step 4. Generate ID by site, cpid, connector.In total 306 ID's are generated. #### 
 ### for each connector, charge profiles should be generated and then linked back together to form time series plots on occupancy, or to enable occupancy calculations
 
-df<- df %>% group_by(Site,`CP ID`,Connector)%>% dplyr::mutate(ID=cur_group_id())
+df<- df %>% group_by(site,cpid,connector)%>% dplyr::mutate(ID=cur_group_id())
+
+#the idea is to program the code below such that the connector id is used to generate a file with all the timestamps and an indicator value
+# indicating whether the connector is occupied for that timestamp or not. 
+#subsequently, all these files can be joined, and then the occupancy indicators can be added up, to profile total occupancy on the network for any
+#given timestamp. After this, occupancy profiles for each weekday and weekend day can be derived. 
 
 df_1 <- subset(df, ID==111)
-df_1 <- select(df_1,c("Total kWh","start_time_stamp","end_time_stamp","charge_id"))
+df_1 <- select(df_1,c("totalkwh","start_time_stamp","end_time_stamp","charge_id"))
 #expand by 2 and then generate timestamp for start and end. This can subsequently be merged with timestamp dataframe
 df_1 <- expandRows(df_1, count = 2, count.is.col=FALSE)
 df_1$row_odd <-seq_len(nrow(df_1)) %% 2
