@@ -1,0 +1,313 @@
+Charge Point ID,Serial,Site,Make,Lat,Lon
+60001,EM3883B-3,Central Lower Car Park,Elektromotive,53.47605,-2.24672
+60002,EM3883A-1,Central Lower Car Park,Elektromotive,53.47605,-2.24672
+60003,EM3702A-1,Central Lower Car Park,Elektromotive,53.47605,-2.24672
+60004,EM3702B-3,Central Lower Car Park,Elektromotive,53.47605,-2.24672
+60005,EM3726A-1,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60006,EM3726B-3,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60007,EM3696A-1,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60008,EM3696B-3,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60009,EM3701A-1,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60010,EM3701B-3,Octagon Multistorey,Elektromotive,53.57618,-2.43077
+60011,EM3728A-1,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60012,EM3728B-3,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60019,3736A,Rochdale Train Station,Elektromotive,53.610335,-2.151137
+60020,3736B,Rochdale Train Station,Elektromotive,53.610335,-2.151237
+60021,EM3718A-1,Rochdale Train Station,Elektromotive,53.61102,-2.15445
+60022,EM3718B-3,Rochdale Train Station,Elektromotive,53.61102,-2.15445
+60023,EM3703A-1,Trafford Town Hall,Elektromotive,53.45893,-2.28754
+60024,EM3703B-3,Trafford Town Hall,Elektromotive,53.45893,-2.28754
+60029,EM3732A-1,Trafford Centre Parking Garage East,Elektromotive,53.46534,-2.34518
+60030,EM3732B-3,Trafford Centre Parking Garage East,Elektromotive,53.46534,-2.34518
+60031,EM3721A-1,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60032,EM3721B-3,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60033,EM4132A-1,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60034,EM4132B-3,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60035,EM3989A-1,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60036,EM3989B-3,Trafford Centre West,Elektromotive,53.46537,-2.35302
+60037,EM3695A-1,Great Northern Car Park,Elektromotive,53.47667,-2.24902
+60038,EM3695B-3,Great Northern Car Park,Elektromotive,53.47667,-2.24902
+60039,EM3689B-3,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60040,EM3689A-1,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60041,EM3847A-1,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60042,EM3847B-3,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60043,EM3714A-1,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60044,EM3714B-3,Topp Way Multi Storey Car Park,Elektromotive,53.58253,-2.43112
+60045,EM3693A-1,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60046,EM3693B-3,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60047,EM3711A-1,Hobson Street Car Park,Elektromotive,53.5388,-2.11267
+60048,EM3711B-3,Hobson Street Car Park,Elektromotive,53.5388,-2.11267
+60049,EM3716A-1,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60050,EM3716B-3,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60051,EM3704A-1,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60052,EM3704B-3,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60053,EM3722A-1,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60054,EM3722B-3,Deane Road Multi Storey Car Park,Elektromotive,53.57339,-2.44161
+60055,3727A,Leigh Bus Station (TfGM access only),Elektromotive,53.49292,-2.48058
+60056,3727B,Leigh Bus Station (TfGM access only),Elektromotive,53.49302,-2.48058
+60057,3870A,Waterloo Street Car Park,Elektromotive,53.5405972,-2.1077462
+60058,3870B,Waterloo Street Car Park,Elektromotive,53.5405972,-2.1077562
+60060,3665A,TfGM HQ (TfGM access only),Elektromotive,53.47873,-2.2316
+60061,3665B,TfGM HQ (TfGM access only),Elektromotive,53.47883,-2.2316
+60062,EM3692A-1,George Street,Elektromotive,53.54049,-2.11607
+60063,EM3692B-3,George Street,Elektromotive,53.54049,-2.11607
+60068,EM3685A-1,Flixton Road Railway Station Car Park,Elektromotive,53.44426,-2.38441
+60069,EM3685B-3,Flixton Road Railway Station Car Park,Elektromotive,53.44426,-2.38441
+60070,3684A,Ashton Moss Tram Station,Elektromotive,53.4861,-2.11883
+60071,3684B,Ashton Moss Tram Station,Elektromotive,53.4861,-2.11883
+60072,EM3866A-1,Water Street,Elektromotive,53.5486,-2.62833
+60073,EM3866B-3,Water Street,Elektromotive,53.5486,-2.62833
+60074,4149A,Ormand Quad,Elektromotive,53.46979,-2.23968
+60075,4149B,Ormand Quad,Elektromotive,53.46969,-2.23968
+60078,EM3861A-1,Edward Street,Elektromotive,53.406,-2.15705
+60079,EM3861B-3,Edward Street,Elektromotive,53.406,-2.15705
+60080,EM3833A-1,Vicars Gate ,Elektromotive,53.61555,-2.16029
+60081,EM3833B-3,Vicars Gate ,Elektromotive,53.61555,-2.16029
+60086,EM3710A-1,Trafford Centre Parking Garage East,Elektromotive,53.46534,-2.34518
+60087,EM3710B-3,Trafford Centre Parking Garage East,Elektromotive,53.46534,-2.34518
+60088,EM3881A-1,Lacy Street,Elektromotive,53.44418,-2.30753
+60089,EM3881B-3,Lacy Street,Elektromotive,53.44418,-2.30753
+60090,EM3889A-1,Stott Lane Car Park,Elektromotive,53.48592,-2.32011
+60091,EM3889B-3,Stott Lane Car Park,Elektromotive,53.486,-2.32011
+60092,EM3896A-1,Stott Lane Car Park,Elektromotive,53.4861,-2.32011
+60093,EM3896B-3,Stott Lane Car Park,Elektromotive,53.4862,-2.32011
+60094,EM3850A-1,Ardwick Sports Hall,Elektromotive,53.46442,-2.21255
+60095,EM3850B-3,Ardwick Sports Hall,Elektromotive,53.46442,-2.21255
+60096,EM3849A-1,Phoenix Way,Elektromotive,53.46426,-2.24817
+60097,EM3849B-3,Phoenix Way,Elektromotive,53.46426,-2.24817
+60104,EM4145A-1,Heaton Park,Elektromotive,53.53655,-2.2429
+60105,EM4145B-3,Heaton Park,Elektromotive,53.53655,-2.2429
+60106,EM3842A-1,Lord Street Pay and Display,Elektromotive,53.49793,-2.51838
+60107,EM3842B-3,Lord Street Pay and Display,Elektromotive,53.49793,-2.51838
+60114,3994A,Stockport Bus Station (TfGM access only),Elektromotive,53.40803,-2.16386
+60115,3994B,Stockport Bus Station (TfGM access only),Elektromotive,53.40803,-2.16486
+60116,EM3897B-3,Crescent House Lay By,Elektromotive,53.48329,-2.26962
+60117,EM3897A-1,Crescent House Lay By,Elektromotive,53.48339,-2.26962
+60118,EM3852A-1,Pendleton Town Centre,Elektromotive,53.48801,-2.28641
+60119,EM3852B-3,Pendleton Town Centre,Elektromotive,53.48811,-2.28641
+60120,EM3855A-1,Salford Civic Centre,Elektromotive,53.51028,-2.33827
+60121,EM3855B-3,Salford Civic Centre,Elektromotive,53.51038,-2.33827
+60126,EM3895A-1,Manchester Royal Infirmary,Elektromotive,53.45923,-2.22183
+60127,EM3895B-3,Manchester Royal Infirmary,Elektromotive,53.45923,-2.22183
+60128,EM3859A-1,Chadderton Town Hall Car Park,Elektromotive,53.54528,-2.13646
+60129,EM3859B-3,Chadderton Town Hall Car Park,Elektromotive,53.54528,-2.13646
+60130,3843A,Middleton Bus Station (TfGM access only),Elektromotive,53.54767,-2.20032
+60131,3843B,Middleton Bus Station (TfGM access only),Elektromotive,53.54767,-2.20132
+60134,3836A,Oldham West Bus Station (TfGM access only),Elektromotive,53.54202,-2.11691
+60135,3836B,Oldham West Bus Station (TfGM access only),Elektromotive,53.54202,-2.11791
+60136,3977A,Irwell Place,Elektromotive,53.4829,-2.2713
+60137,3977B,Irwell Place,Elektromotive,53.4829,-2.2712
+60138,EM3694A-1,Allerton Car Park,Elektromotive,53.48834,-2.27857
+60139,EM3694B-3,Allerton Car Park,Elektromotive,53.48834,-2.27857
+60140,EM3734A-1 (CV3 42805),Newton Building,Elektromotive,53.485324,-2.273908
+60141,EM3734B-3 (CV3 42806),Newton Building,Elektromotive,53.485324,-2.273908
+60144,EM3723A-1,Walkden Gateway,Elektromotive,53.52479,-2.3986
+60145,EM3723B-3,Walkden Gateway,Elektromotive,53.52489,-2.3986
+60146,EM3857A-1,Irlam and Cadishead Leisure Centre,Elektromotive,53.4427,-2.42269
+60147,EM3857B-3,Irlam and Cadishead Leisure Centre,Elektromotive,53.4428,-2.42269
+60148,EM3887A-1,Broughton Hub,Elektromotive,53.50703,-2.25974
+60149,EM3887B-3,Broughton Hub,Elektromotive,53.50713,-2.25974
+60152,EM3690A-1,Wenlock Way,Elektromotive,53.46915,-2.19842
+60153,EM3690B-3,Wenlock Way,Elektromotive,53.4692,-2.19842
+60154,EM3886A-1,Egerton Road,Elektromotive,53.4399,-2.21819
+60155,EM3886B-3,Egerton Road,Elektromotive,53.4399,-2.21819
+60156,EM3686A-1,Hollinwood Park and Ride,Elektromotive,53.51916,-2.14794
+60157,EM3686B-3,Hollinwood Park and Ride,Elektromotive,53.51916,-2.14794
+60162,EM4015A-1,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60163,EM4015B-3,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60164,EM3892A-1,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60165,EM3892B-3,Church Street Car Park- Level 3,Elektromotive,53.48343,-2.23725
+60170,EM3848A-1,Cleminson Street Car Park,Elektromotive,53.48454,-2.25831
+60171,EM3848B-3,Cleminson Street Car Park,Elektromotive,53.48464,-2.25831
+60172,EM3901B-3,Ashton Pool,Elektromotive,53.48895,-2.09799
+60173,EM3901A-1,Ashton Pool,Elektromotive,53.48895,-2.09799
+60174,EM3899A-1,St Petersgate,Elektromotive,53.40939,-2.1594
+60175,EM3899B-3,St Petersgate,Elektromotive,53.40939,-2.1594
+60176,EM3906A-1,Corporation Road,Elektromotive,53.48312,-2.3405
+60177,EM3906B-3,Corporation Road,Elektromotive,53.48302,-2.3405
+60178,EM3979A-1,Middleton Arena Car Park,Elektromotive,53.55041,-2.19622
+60179,EM3979B-3,Middleton Arena Car Park,Elektromotive,53.55041,-2.19622
+60180,EM3988A-1,Fairfax Road,Elektromotive,53.53424,-2.28355
+60181,EM3988B-3,Fairfax Road,Elektromotive,53.53424,-2.28355
+60182,EM3987A-1,Bury Market,Elektromotive,53.59097,-2.29526
+60183,EM3987B-3,Bury Market,Elektromotive,53.59097,-2.29526
+60186,EM3990A-1,Foundry Street,Elektromotive,53.59261,-2.2897
+60187,EM3990B-3,Foundry Street,Elektromotive,53.59261,-2.2897
+60188,EM3997A-1,The Castle,Elektromotive,53.59304,-2.30129
+60189,EM3997B-3,The Castle,Elektromotive,53.59304,-2.30129
+60190,EM3980A-1,Wright Street Car Park,Elektromotive,53.59975,-2.54711
+60191,EM3980B-3,Wright Street Car Park,Elektromotive,53.59975,-2.54711
+60194,EM3902B-3,East Didsbury Park and Ride,Elektromotive,53.40928,-2.22187
+60195,EM3902A-1,East Didsbury Park and Ride,Elektromotive,53.40928,-2.22187
+60198,EM3873A-1,Churchgate Car Park,Elektromotive,53.40969,-2.15383
+60199,EM3873B-3,Churchgate Car Park,Elektromotive,53.40969,-2.15383
+60202,EM3998A-1,Spinning Gate Pay and Display,Elektromotive,53.49543,-2.51716
+60203,EM3998B-3,Spinning Gate Pay and Display,Elektromotive,53.49543,-2.51716
+60206,EM4011A-1,Henrietta Car Park,Elektromotive,53.48993,-2.09162
+60207,EM4011B-3,Henrietta Car Park,Elektromotive,53.48993,-2.09162
+60208,EM3999A-1,Church Street Pay and Display,Elektromotive,53.49773,-2.51393
+60209,EM3999B-3,Church Street Pay and Display,Elektromotive,53.49773,-2.51393
+60212,EM3984B-3,Meadway Park West,Elektromotive,53.35594,-2.16444
+60213,EM3984A-1,Meadway Park West,Elektromotive,53.35594,-2.16444
+60216,EM3697A-1,Leigh Town Centre,Elektromotive,53.49738,-2.51935
+60217,EM3697B-3,Leigh Town Centre,Elektromotive,53.49738,-2.51935
+60218,EM3995B-3,Doctors Nook Pay and Display,Elektromotive,53.49818,-2.51817
+60219,EM3995A-1,Doctors Nook Pay and Display,Elektromotive,53.49818,-2.51817
+60220,EM3691A-1,Rock Street,Elektromotive,53.54275,-2.1124
+60221,EM3691B-3,Rock Street,Elektromotive,53.54275,-2.1124
+60222,EM4016A-1,Wythenshawe Forum,Elektromotive,53.38079,-2.2649
+60223,EM4016B-3,Wythenshawe Forum,Elektromotive,53.38079,-2.2649
+60224,EM3717A-1,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60225,EM3717B-3,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60229,EM3996A-1,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60230,EM3996B-3,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60231,EM4171A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60232,EM4171B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60233,EM3707A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60234,EM3707B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60235,EM3687A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60236,EM3687B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60237,EM3725A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60238,EM3725B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60239,EM3869B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60240,EM3869A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60241,EM3709A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60242,EM3709B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60243,EM3706A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60244,EM3706B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60245,EM3731A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60246,EM3731B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60247,EM3715A-1,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60248,EM3715B-3,Birley Fields Campus,Elektromotive,53.46711,-2.24676
+60249,EM4052B-3,Trinity Bridge House,Elektromotive,53.58987,-2.29452
+60250,EM4052A-1,Trinity Bridge House,Elektromotive,53.58987,-2.29452
+60251,EM4051A-1,Prince Street,Elektromotive,53.64738,-2.31737
+60252,EM4051B-3,Prince Street,Elektromotive,53.64738,-2.31737
+60253,3688A,Shudehill Interchange Bus Station (TfGM access only),Elektromotive,53.483432,-2.237251
+60254,3688B,Shudehill Interchange Bus Station (TfGM access only),Elektromotive,53.483532,-2.237251
+60255,EM4053A-1,Great Northern Car Park,Elektromotive,53.47667,-2.24902
+60256,EM4053B-3,Great Northern Car Park,Elektromotive,53.47667,-2.24902
+60257,EM4073A-1,Great Northern Car Park,Elektromotive,53.47663,-2.24903
+60258,EM4073B-3,Great Northern Car Park,Elektromotive,53.47667,-2.24902
+60259,EM4014A-1,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60260,EM4014B-3,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60261,EM4054A-1,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60262,EM4054B-3,The Grand Car Park,Elektromotive,53.48005,-2.23435
+60268,EM3738A-1,Elliot Street Car Park,Elektromotive,53.53846,-2.07153
+60269,EM3738B-3,Elliot Street Car Park,Elektromotive,53.53846,-2.07153
+60272,3867A,Wigan Council Depot,Elektromotive,53.54544,-2.637474
+60273,3867B,Wigan Council Depot,Elektromotive,53.54544,-2.637574
+60274,EM4072A-1,Dukinfield Town Hall,Elektromotive,53.46942,-2.08962
+60275,EM4072B-3,Dukinfield Town Hall,Elektromotive,53.46942,-2.08962
+60276,EM3729A-1,Rassbottom Street Car Park,Elektromotive,53.48465,-2.0622
+60277,EM3729B-3,Rassbottom Street Car Park,Elektromotive,53.48465,-2.0622
+60278,3888A,Wigan Council Depot,Elektromotive,53.54544,-2.637674
+60279,3888B,Wigan Council Depot,Elektromotive,53.54544,-2.637774
+60280,EM3992A-1,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60281,EM3992B-3,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
+60282,EM4150A-1,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60283,EM4150B-3,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60284,EM4161A-1,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60285,EM4161B-3,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60286,EM4151B-3,The Royal Oldham Hospital,Elektromotive,53.55333,-2.12078
+60287,EM4151A-1,The Royal Oldham Hospital,Elektromotive,53.55333,-2.12078
+60290,EM3730A-1,Browncross Street,Elektromotive,53.48295,-2.25319
+60291,EM3730B-3,Browncross Street,Elektromotive,53.483,-2.25319
+60292,EM3719A-1,Browncross Street,Elektromotive,53.4831,-2.25319
+60293,EM3719B-3,Browncross Street,Elektromotive,53.4832,-2.25319
+60298,EM4172A-1,Fairfield Hospital,Elektromotive,53.60106,-2.25665
+60299,EM4172B-3,Fairfield Hospital,Elektromotive,53.60106,-2.25665
+60306,EM4157A-1,Cheadle Royal Business Park,Elektromotive,53.37711,-2.22069
+60307,EM4157B-3,Cheadle Royal Business Park,Elektromotive,53.37711,-2.22069
+60308,EM4131B-3,Regent Road Car Park,Elektromotive,53.38678,-2.354
+60309,EM4131A-1,Regent Road Car Park,Elektromotive,53.38678,-2.354
+60310,3713A,Rochdale Bus Station,Elektromotive,53.617527,-2.155411
+60311,3713B,Rochdale Bus Station,Elektromotive,53.617527,-2.155411
+60312,EM4146A-1,East Didsbury Park and Ride,Elektromotive,53.40928,-2.22187
+60313,EM4146B-3,East Didsbury Park and Ride,Elektromotive,53.40928,-2.22187
+60314,EM4148A-1,North Manchester Hospital,Elektromotive,53.51921,-2.22845
+60315,EM4148B-3,North Manchester Hospital,Elektromotive,53.51921,-2.22845
+60316,EM4147A-1,Rochdale Infirmary,Elektromotive,53.62444,-2.16015
+60317,EM4147B-3,Rochdale Infirmary,Elektromotive,53.62444,-2.16015
+60318,EM4119A-1,Blackfriars Street,Elektromotive,53.48414,-2.24823
+60319,EM4119B-3,Blackfriars Street,Elektromotive,53.48424,-2.24823
+60320,EM4120A-1,Monton Road Car Park,Elektromotive,53.49148,-2.35111
+60321,EM4120B-3,Monton Road Car Park,Elektromotive,53.49158,-2.35111
+60322,EM4156A-1,Merchants Quay,Elektromotive,53.46898,-2.28617
+60323,EM4156B-3,Merchants Quay,Elektromotive,53.46898,-2.28617
+60324,EM4173A-1,Ashton Moss Tram Station,Elektromotive,53.4861,-2.11883
+60325,EM4173B-3,Ashton Moss Tram Station,Elektromotive,53.4861,-2.11883
+60326,4121A,Abraham Moss,Elektromotive,53.511722,-2.236437
+60327,4121B,Abraham Moss,Elektromotive,53.511722,-2.236537
+60328,EM4117A-1,Manchester Regional Tennis Centre,Elektromotive,53.48638,-2.20174
+60329,EM4117B-3,Manchester Regional Tennis Centre,Elektromotive,53.48638,-2.20174
+60330,4158A,Belvedere Buildings,Elektromotive,53.47978,-2.2425
+60331,4158B,Belvedere Buildings,Elektromotive,53.47978,-2.2425
+60332,EM4118A-1,Blackfriars Road,Elektromotive,53.4863,-2.25259
+60333,EM4118B-3,Blackfriars Road,Elektromotive,53.4864,-2.25259
+60334,EM4327A-1,Salford Civic Centre Staff Car Park,Elektromotive,53.51054,-2.33991
+60335,EM4327B-3,Salford Civic Centre Staff Car Park,Elektromotive,53.51064,-2.33991
+60336,EM4334A-1,Salford Civic Centre Staff Car Park,Elektromotive,53.51054,-2.33981
+60337,EM4334B-3,Salford Civic Centre Staff Car Park,Elektromotive,53.51064,-2.33981
+60338,EM3720B-3,Ashton Bus Station (TfGM access only),Elektromotive,53.49017,-2.08746
+60339,EM3720A-1,Ashton Bus Station (TfGM access only),Elektromotive,53.49017,-2.08746
+60350,EFA60350,Manchester Regional Tennis Centre,Siemens,53.48667372,-2.201868659
+60351,EFA60351,Station Approach (TfGM access only),Siemens,53.47815,-2.23197
+60352,EFA60352,John Dalton Building,Siemens,53.47180029,-2.241206562
+60353,EFA60353,Salford Royal Infirmary,Siemens,53.4860381,-2.320214142
+60357,EM3708B-3,Oldham Civic Centre,Elektromotive,53.54242,-2.11738
+60358,EM3708A-1,Oldham Civic Centre,Elektromotive,53.54232,-2.11738
+60361,EM3832A-1,"Housing Units Ltd, Wickentree Lane, Chadderton",Elektromotive,53.51681,-2.1517
+60362,EM3832B-3,"Housing Units Ltd, Wickentree Lane, Chadderton",Elektromotive,53.51681,-2.1517
+60363,EM4446A-1,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
+60364,EM4446B-3,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
+60365,EM4445A-1,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
+60366,EM4445B-3,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
+60367,EM3700A-1,Westway Car Park,Elektromotive,53.57798,-2.09501
+60368,EM3700B-3,Westway Car Park,Elektromotive,53.578,-2.09501
+60369,EM4141A-1,Port Street,Elektromotive,53.48225,-2.23112
+60370,EM4141B-3,Port Street,Elektromotive,53.48225,-2.23112
+60371,EM3844A-1,A580 Park and Ride,Elektromotive,53.51393,-2.37146
+60372,EM3844B-3,A580 Park and Ride,Elektromotive,53.51393,-2.37146
+60375,EM3841A-1,Hulme Street,Elektromotive,53.4718,-2.24456
+60376,EM3841B-3,Hulme Street,Elektromotive,53.47182,-2.24458
+60377,EM4517A-1,"University of Manchester, Cecil Street",Elektromotive,53.46241,-2.23432
+60378,EM4517B-3,"University of Manchester, Cecil Street",Elektromotive,53.46251,-2.23432
+60379,EM4516A-1,"University of Manchester, Cecil Street",Elektromotive,53.46261,-2.23432
+60380,EM4516B-3,"University of Manchester, Cecil Street",Elektromotive,53.46271,-2.23432
+60381,EM4536A-1,Oldham Mumps,Elektromotive,53.5424,-2.10343
+60382,EM4536B-3,Oldham Mumps,Elektromotive,53.5425,-2.10343
+60383,EM4537A-1,Oldham Mumps,Elektromotive,53.5426,-2.10343
+60384,EM4537B-3,Oldham Mumps,Elektromotive,53.5427,-2.10343
+60385,4538,Bolton Interchange (TfGM access only),Chargemaster,53.57303,-2.42517
+60386,10104,John Dalton Building,Chargemaster,53.4712,-2.24103
+62340,DBT00062,Manchester Metropolitan University - Cambridge North,DBT ,53.46928,-2.24034
+70168,APT70168,Capgemini Sale,APT,53.42794,-2.32338
+70768,ELMCYC_0005,Manchester Metropolitan University - John Dalton Building,ICU,53.471385,-2.240286
+70771,ELMCYC_0007,Manchester Metropolitan University - Cambridge Hall,ICU,53.46913,-2.24018
+70772,ELMCYC_0006,Manchester Metropolitan University - John Dalton Building,ICU,53.4714,-2.24022
+70774,ELMCYC_0008,The Christie NHS Foundation Trust,ICU,53.42891,-2.22535
+70918,ELMCYC_0023,Grafton Street Car Park,ICU,53.46306,-2.2288
+70919,ELMCYC_0025,Grafton Street Car Park,ICU,53.46316,-2.2288
+70959,01.S90-03458,"Sir William Siemens House, Didsbury, Manchester",Siemens,53.42544,-2.25273
+80067,ELMCYC_0064,Cobbett House,ICU,53.46113,-2.22787
+80230,11340,Exchange Quay,Chargemaster,53.46724,-2.28261
+80231,11305,Oswald Road,Chargemaster,53.44642,-2.28006
+80232,11339,Derker Park and Ride,Chargemaster,53.55001,-2.10107
+80233,11341,Parson Lane North,Chargemaster,53.59563,-2.29408
+80234,11303,East Didsbury Park and Ride,Chargemaster,53.40928,-2.22187
+80309,10285,"University of Manchester, Booth Street, Manchester",Chargemaster,53.46539,-2.2367
+80417,4539,Vicars Gate ,Chargemaster,53.615202,-2.158708
+80418,4535,Mona Street Pay and Display,Chargemaster,53.54544,-2.63747
+80419,4537,River Street Car Park,Chargemaster,53.616327,-2.154849
+80420,10101,Hyde Bus Station (TfGM access only),Chargemaster,53.452887,-2.08115
+80421,10206,Laystall Street,Chargemaster,53.48113,-2.22794
+80423,10102,Store Street,Chargemaster,53.48009,-2.22589
+80441,11304,Etihad Velodrome Cycling Arena,Chargemaster,53.48581,-2.19229
+80559,11590,Trafford General Hospital,Chargemaster,53.45253,-2.37023
+80564,10843,Trafford Centre Parking Garage East,Chargemaster,53.46534,-2.34518
+80565,10103,Croft Street Car Park,Chargemaster,53.51622,-2.14921
+80571,11306,Corkland Road,Chargemaster,53.44012,-2.27138
+80572,11178,Trafford Centre Parking Garage East,Chargemaster,53.46534,-2.34518
+80802,4541,Irwell Place,Chargemaster,53.483011,-2.271178
+CM10927,10927,"Back to the Garden Nursery, Sinderland Road, Broadheath",Chargemaster,53.40361,-2.35963
