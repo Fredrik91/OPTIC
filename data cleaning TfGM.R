@@ -26,12 +26,19 @@ library(lubridate)
 # be made reliable for 2019. 
 
 #df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Use.csv")
-df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM 2018 2019 userid.csv")
+df = read_csv("C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/OPTIC/TFGM 2018 2019 userid.csv")
 
 
 #assets = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Asset Inventory.csv")
 #assets_reduced = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM Assets_reduced.csv")
- 
+
+### FOr usage into QGIS, read in file with keys for lat long. This can subsequently be matched with the QGIS summary statistic files
+df_location = read_csv("C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/OPTIC/TFGM Assets_reduced.csv")
+df_location$site= df_location$Site
+df_location <-select(df_location, c('site','Lat','Lon'))
+df_location <-unique(df_location)
+
+
 ## Step 3. Generate variables ####
 
 # 1. generate timestamp from string variables. 
@@ -116,6 +123,10 @@ df_list<-list(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9,df10)
 
 #df_list <- lapply(paste0("df",0:7))
 site<-df_list%>%reduce(full_join,by='site')
+QGIS_data <-merge(site,df_location,by='site')
+#avoid duplicates in site
+QGIS_data <- QGIS_data%>% distinct(site, .keep_all= TRUE)
+
 
 rm(df_list)
 rm(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9,df10)
@@ -146,7 +157,7 @@ write_csv(df,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/TFGM 
 # For use in QGIS
 # QGIS file contains contextual information from the UK census, as well as shapefiles such as road network and so on.
 # Land use characteristics could be added there to enrich the data. 
-write_csv(site,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/QGIS/Shapefiles/TFGM Site data.csv")
+write_csv(QGIS_data,"C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/QGIS/Shapefiles/TFGM Site data.csv")
 
 ## Step 9. Summary statistics and visualisations ####
 
