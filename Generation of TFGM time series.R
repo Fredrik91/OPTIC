@@ -15,18 +15,16 @@ library(utilities)
 ### reading data 
 
 #df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM cleaned data.csv")
-df = read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/TFGM 2018 2019 userid.csv")
-
-
+df = read_csv("C:/Users/cvfm9/OneDrive - Loughborough University/OPTIC/GMEV/TFGM cleaned data.csv")
 
 df$start_time_stamp <- floor_date(df$start_time_stamp, "30 mins") 
 
 ## now this can be matched with carbon intensity data to allocate a carbon cost to each charge event. 
 df_sept  <- df %>%  filter(start_time_stamp >= as.Date('2018-09-01') & start_time_stamp <= as.Date('2018-09-10'))
 
-df_sept <-select(df_sept, c('Total kWh','start_time_stamp'))
+df_sept <-select(df_sept, c('totalkwh','start_time_stamp'))
 
-df_sept<-df_sept%>% group_by(start_time_stamp)%>% summarise(kwh_total=sum(`Total kWh`))
+df_sept<-df_sept%>% group_by(start_time_stamp)%>% summarise(kwh_total=sum(`totalkwh`))
 
 df_energy <- read_csv("C:/Users/cvfm9/Loughborough University/Craig Morton - VPACH/Phase 2/Analysis/TripAttraction/Data/Greater Manchester EV data/carbon intensity data.csv")
 
