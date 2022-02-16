@@ -170,7 +170,7 @@ plugin_time <-aggregate(df$minimum_plugin_time,by=list(df$start_time_stamp_new),
 day_kwh <- aggregate(df$totalkwh, by=list(df$start_time_stamp_new),median)
 day_kwh_total <- aggregate(df$totalkwh, by=list(df$start_time_stamp_new),sum)
 
-ggplot(date, aes(x=Group.1,y=x)) + geom_line() 
+ggplot(date, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="", title = "Daily charging events")
 
 ggplot(duration, aes(x=Group.1,y=x)) + geom_line() 
 
@@ -178,7 +178,7 @@ ggplot(plugin_time,aes(x=Group.1,y=x)) + geom_line()
 
 ggplot(day_kwh, aes(x=Group.1,y=x)) + geom_line() 
 
-ggplot(day_kwh_total, aes(x=Group.1,y=x)) + geom_line() 
+ggplot(day_kwh_total, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="kWh", title = "Daily energy consumption (kWh)")
 
 #site level statistics
 ggplot(site,aes(x=chargeduration_median)) + geom_histogram(binwidth=5)  +xlim(0,500)
