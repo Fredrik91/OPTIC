@@ -8,7 +8,7 @@
 ## Step 1 load library
 ## Step 2 importing data
 ## Step 3 Generating variables
-## Step 4 Dropping missing data and obsolete variables
+## Step 4 Dropping missing data, obsolete variables and non public charging stations
 ## Step 5 Drop outliers and erroneous values
 ## Step 6 Generate summary statistics on the site level
 ## Step 7 Generate summary statistics on the userid level
@@ -80,6 +80,24 @@ df <-mutate(df,idle_plugin_time=df$charge_duration - df$minimum_plugin_time)
 df$vehicle <- df$vehicle %>% replace_na('Unknown vehicle')
 
 df <- df[complete.cases(df), ]
+
+#filter out non public sites
+
+df <- filter(df, site != "** Chargemaster Test **")
+df <- filter(df, site != "***TEST SITE*** Charge Your Car HQ")
+df <- filter(df, site != "Ashton Bus Station (TfGM access only)")
+df <- filter(df, site != "Bolton Interchange (TfGM access only)")
+df <- filter(df, site != "Hyde Bus Station (TfGM access only)")
+df <- filter(df, site != "Station Approach (TfGM access only)")
+df <- filter(df, site != "TfGM HQ (TfGM access only)")
+df <- filter(df, site != "Stockport Bus Station (TfGM access only)")
+df <- filter(df, site != "Middleton Bus Station (TfGM access only)")
+df <- filter(df, site != "Oldham West Bus Station (TfGM access only)")
+df <- filter(df, site != "Shudehill Interchange Bus Station (TfGM access only)")
+
+df <- filter(df, site != "Wigan Council Depot")
+df <- filter(df, site != "Rochdale Bus Station")
+
 
 
 #assets <- select(assets,-c('Site ID','District','CP1 Asset Number','CP2 Asset Number','Commissioning Date','Commissioning Certificate Date','Additional Notes','Charger Model'))
