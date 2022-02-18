@@ -81,7 +81,8 @@ df$vehicle <- df$vehicle %>% replace_na('Unknown vehicle')
 
 df <- df[complete.cases(df), ]
 
-#filter out non public sites
+#filter out non public sites. Please note that the university sites (Manchester Metropolitan University and Manchester University),
+##likely non public as well, are retained in the data!
 
 df <- filter(df, site != "** Chargemaster Test **")
 df <- filter(df, site != "***TEST SITE*** Charge Your Car HQ")
@@ -142,7 +143,8 @@ df_list<-list(df0,df1,df2,df3,df4,df5,df6,df7,df8,df9,df10)
 #df_list <- lapply(paste0("df",0:7))
 site<-df_list%>%reduce(full_join,by='site')
 QGIS_data <-merge(site,df_location,by='site')
-#avoid duplicates in site
+#avoid duplicates in site.
+#Please note, there are 109 sites, but only 102 have valid long latitutes in the Asset database. 
 QGIS_data <- QGIS_data%>% distinct(site, .keep_all= TRUE)
 
 
