@@ -192,35 +192,42 @@ day_kwh_total <- aggregate(df$totalkwh, by=list(df$start_time_stamp_new),sum)
 
 ggplot(date, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="", title = "Daily charging events")
 
-ggplot(duration, aes(x=Group.1,y=x)) + geom_line() 
+ggplot(duration, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="Minutes", title = "Plug-in duration")
 
-ggplot(plugin_time,aes(x=Group.1,y=x)) + geom_line()
+ggplot(plugin_time,aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="Minutes", title = "Charging duration")
 
-ggplot(day_kwh, aes(x=Group.1,y=x)) + geom_line() 
+ggplot(day_kwh, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="kWh", title = "Mean energy consumption per charge event")
 
 ggplot(day_kwh_total, aes(x=Group.1,y=x)) + geom_line() + labs(x="",y="kWh", title = "Daily energy consumption (kWh)")
 
 #site level statistics
-ggplot(site,aes(x=chargeduration_median)) + geom_histogram(binwidth=5)  +xlim(0,500)
-ggplot(site,aes(x=median_min_plugin_time)) + geom_histogram(binwidth=5)  +xlim(0,200)
+ggplot(site,aes(x=chargeduration_median)) + geom_histogram(binwidth=5)  +xlim(0,500)+ labs(x="Minutes",y="Count", title = "Median plugin duration per site")
+ggplot(site,aes(x=median_min_plugin_time)) + geom_histogram(binwidth=5)  +xlim(0,200)+ labs(x="Minutes",y="Count", title = "Median charging duration per site")
 
 
-ggplot(site,aes(x=kwh_median))+ geom_histogram(binwidth=1)  +xlim(0,50)
+
+ggplot(site,aes(x=kwh_median))+ geom_histogram(binwidth=1)  +xlim(0,50)+ labs(x="Median energy consumption (kWh)",y="Count", title = "Median energy consumption per charge event per site")
+
 ggplot(site,aes(x=n))+ geom_histogram(binwidth=40)  +xlim(0,4000)
 
 ggplot(site,aes(x=unique_users)) + geom_histogram(binwidth=1) +xlim(0,1000)
 
 #charge event level statistics
-ggplot(df, aes(x=charge_duration)) + geom_histogram(binwidth=1) +xlim(0,500)
-ggplot(df, aes(x=minimum_plugin_time)) + geom_histogram(binwidth=1) +xlim(0,400)
+ggplot(df, aes(x=charge_duration)) + geom_histogram(binwidth=1) +xlim(0,500) + labs(x="Plugin time (minutes)",y="Count", title = "Distribution of plugin-times")
+
+ggplot(df, aes(x=minimum_plugin_time)) + geom_histogram(binwidth=1) +xlim(0,500) + labs(x="Charging time (minutes)",y="Count", title = "Distribution of charging-times")
+
 ggplot(df, aes(x=idle_plugin_time)) + geom_histogram(binwidth=1) +xlim(0,400)
-ggplot(df, aes(x=totalkwh)) + geom_histogram(binwidth=0.1)
+ggplot(df, aes(x=totalkwh)) + geom_histogram(binwidth=0.1) + labs(x="Energy consumption (kWh)",y="Count", title = "Distribution of energy consumption")
+
 
 ggplot(df, aes(x=`power_output`)) + geom_histogram(binwidth=1)
 
 ### user id level statistics
-ggplot(userdata, aes(x=n))+geom_histogram(binwidth=1) +xlim(0,100)
-ggplot(userdata,aes(x=unique_sites)) +geom_histogram(binwidth=1) +xlim(0,30)
+ggplot(userdata, aes(x=n))+geom_histogram(binwidth=1) +xlim(0,100)+ labs(x="Charge events per user",y="Count", title = "Distribution of charge events per user")
+
+ggplot(userdata,aes(x=unique_sites)) +geom_histogram(binwidth=1) +xlim(0,30) + labs(x="Charging stations visited per user",y="Count", title = "Distribution of charging station visited per user")
+
 
 ggplot(userdata,aes(x=chargeduration_median)) + geom_histogram(binwidth=5)  +xlim(0,500)
 ggplot(userdata,aes(x=median_min_plugin_time)) + geom_histogram(binwidth=5)  +xlim(0,200)
