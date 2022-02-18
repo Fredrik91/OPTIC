@@ -205,9 +205,9 @@ Charge Point ID,Serial,Site,Make,Lat,Lon
 60279,3888B,Wigan Council Depot,Elektromotive,53.54544,-2.637774
 60280,EM3992A-1,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
 60281,EM3992B-3,Heaton Lane Multi Storey,Elektromotive,53.40961,-2.16537
-60282,EM4150A-1,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60282,EM4150A-1,"University of Manchester, Ground Floor, Booth Street West car park (car Park D)",Elektromotive,53.46593,-2.23754
 60283,EM4150B-3,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
-60284,EM4161A-1,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
+60284,EM4161A-1,"University of Manchester, Ground Floor, Booth Street West car park (car park D)",Elektromotive,53.46593,-2.23754
 60285,EM4161B-3,"University of Manchester, Ground Floor, Booth Street West Car Park (Car Park D)",Elektromotive,53.46593,-2.23754
 60286,EM4151B-3,The Royal Oldham Hospital,Elektromotive,53.55333,-2.12078
 60287,EM4151A-1,The Royal Oldham Hospital,Elektromotive,53.55333,-2.12078
@@ -258,7 +258,7 @@ Charge Point ID,Serial,Site,Make,Lat,Lon
 60357,EM3708B-3,Oldham Civic Centre,Elektromotive,53.54242,-2.11738
 60358,EM3708A-1,Oldham Civic Centre,Elektromotive,53.54232,-2.11738
 60361,EM3832A-1,"Housing Units Ltd, Wickentree Lane, Chadderton",Elektromotive,53.51681,-2.1517
-60362,EM3832B-3,"Housing Units Ltd, Wickentree Lane, Chadderton",Elektromotive,53.51681,-2.1517
+60362,EM3832B-3,Housing Units Ltd,Elektromotive,53.51681,-2.1517
 60363,EM4446A-1,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
 60364,EM4446B-3,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
 60365,EM4445A-1,"University of Manchester, Booth Street West Car Park, 1st Floor, (car park D)",Elektromotive,53.46634,-2.23796
@@ -280,7 +280,7 @@ Charge Point ID,Serial,Site,Make,Lat,Lon
 60383,EM4537A-1,Oldham Mumps,Elektromotive,53.5426,-2.10343
 60384,EM4537B-3,Oldham Mumps,Elektromotive,53.5427,-2.10343
 60385,4538,Bolton Interchange (TfGM access only),Chargemaster,53.57303,-2.42517
-60386,10104,John Dalton Building,Chargemaster,53.4712,-2.24103
+60386,10104,"Manchester Metropolitan University - John Dalton Building, All Saints Campus",Chargemaster,53.4712,-2.24103
 62340,DBT00062,Manchester Metropolitan University - Cambridge North,DBT ,53.46928,-2.24034
 70168,APT70168,Capgemini Sale,APT,53.42794,-2.32338
 70768,ELMCYC_0005,Manchester Metropolitan University - John Dalton Building,ICU,53.471385,-2.240286
